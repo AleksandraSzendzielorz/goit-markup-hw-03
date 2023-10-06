@@ -86,6 +86,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  padding: 16px 32px;
 }
 .order-button:hover {
   background-color: var(--OCEAN);
@@ -197,14 +201,18 @@ body {
 }
 
 .container {
-  width: 1158px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1158px;
 }
 .header-menu {
   display: flex;
+  align-items: center;
 }
 .navigation {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 .contact-list {
   display: flex;
@@ -212,6 +220,30 @@ body {
 .list {
   display: flex;
 }
+.list-portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 .list-studio {
   display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+.team-list {
+}
+.banner {
+  color: var(--WHITE);
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto 48px auto;
 }
