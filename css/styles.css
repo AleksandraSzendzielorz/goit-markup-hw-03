@@ -195,3 +195,23 @@ body {
   color: var(--CLOUD);
   line-height: 1.17;
 }
+
+.container {
+  width: 1158px;
+}
+.header-menu {
+  display: flex;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+.contact-list {
+  display: flex;
+}
+.list {
+  display: flex;
+}
+.list-studio {
+  display: flex;
+}
