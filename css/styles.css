@@ -159,7 +159,15 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  font-size: 16px;
 }
+.footer-paragraph {
+  color: var(--cloud);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  max-width: 264px;
+}
+
 .footer .studio {
   color: var(--CLOUD);
 }
@@ -205,11 +213,12 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1158px;
+  max-width: 1128px;
 }
 .header-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .navigation {
   display: flex;
@@ -259,4 +268,20 @@ p {
 }
 .section {
   padding: 120px 0;
+}
+.header-options {
+  display: flex;
+  gap: 40px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
