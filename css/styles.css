@@ -160,6 +160,7 @@ body {
   color: var(--NAVY-BLUE);
   margin-bottom: 8px;
   text-align: center;
+  border: 1px solid var(--CORNFLOWER);
 }
 
 .from-team {
