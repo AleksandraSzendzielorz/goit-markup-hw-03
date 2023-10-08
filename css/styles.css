@@ -219,7 +219,7 @@ body {
   flex-wrap: wrap;
 }
 .buttons {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 .button {
   border: none;
@@ -302,7 +302,6 @@ body {
 .portfolio-container {
   row-gap: 48px;
   text-align: left;
-  border: 1px solid var(--CORNFLOWER);
 }
 .list-studio {
   color: var(--navy-blue);
@@ -318,6 +317,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid var(--CORNFLOWER);
 }
 .navigation-list {
   display: flex;
@@ -371,4 +371,6 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
