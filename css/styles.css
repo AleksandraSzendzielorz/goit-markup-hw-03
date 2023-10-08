@@ -160,6 +160,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--NAVY-BLUE);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .from-team {
@@ -337,8 +338,6 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
 }
 h1,
 h2,
