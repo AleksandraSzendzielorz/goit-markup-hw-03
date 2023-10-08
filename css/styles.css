@@ -219,7 +219,7 @@ body {
   flex-wrap: wrap;
 }
 .buttons {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .button {
   border: none;
@@ -235,14 +235,17 @@ body {
   color: var(--IRIS);
   background-color: var(--CLOUD);
   padding: 12px 24px;
+  border: 1px solid var(--CORNFLOWER);
 }
 .filter-button:hover {
   color: var(--WHITE);
   background-color: var(--OCEAN);
+  border: 1px solid transparent;
 }
 .filter-button:focus {
   color: var(--WHITE);
   background-color: var(--OCEAN);
+  border: 1px solid transparent;
 }
 .work-list,
 .portfolio-list {
@@ -260,10 +263,7 @@ body {
   color: var(--SLATE);
   text-align: center;
 }
-.second-section .company-features,
-.second-section .list-paragraph {
-  text-align: lefr;
-}
+
 .logo_element-footer {
   color: var(--CLOUD);
   line-height: 1.17;
@@ -302,6 +302,7 @@ body {
 .portfolio-container {
   row-gap: 48px;
   text-align: left;
+  border: 1px solid var(--CORNFLOWER);
 }
 .list-studio {
   color: var(--navy-blue);
@@ -312,6 +313,7 @@ body {
 }
 .nav-list {
   padding: 24px 0;
+  gap: 40px;
 }
 .portfolio-list {
   display: flex;
@@ -365,4 +367,8 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  display: block;
 }
