@@ -12,10 +12,13 @@
   --WHITE: #fff;
   --NAVY-BLUE-modal: #2e2f4266;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  size: 16px;
+
   color: var(--SLATE);
   background-color: var(--WHITE);
 }
@@ -91,6 +94,9 @@ body {
 .section {
   padding: 120px;
 }
+.section .list {
+  justify-content: center;
+}
 .order-button {
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -165,12 +171,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--NAVY-BLUE);
   margin-bottom: 8px;
-  text-align: center;
-
-  .from-team {
-    padding: 32px 0;
-  }
 }
+
+.from-team {
+  padding: 32px 0;
+}
+
 .team-list {
   background-color: var(--WHITE);
   border-radius: 0 0 4px 4px;
@@ -216,17 +222,30 @@ body {
   display: inline-block;
   margin-bottom: 16px;
 }
-.filter-button {
+
+.section-portfolio {
+  padding: 96px 0 120px 0;
+}
+.section-portfolio .list {
+  flex-wrap: wrap;
+}
+.buttons {
+  margin-bottom: 72px;
+}
+.button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
+  line-height: 1.5;
+}
+.filter-button {
+  border: 1px solid var(--cornflower);
   color: var(--IRIS);
   background-color: var(--CLOUD);
-  cursor: pointer;
+  padding: 12px 24px;
 }
 .filter-button:hover {
   color: var(--WHITE);
@@ -236,18 +255,25 @@ body {
   color: var(--WHITE);
   background-color: var(--OCEAN);
 }
+.work-list,
 .portfolio-list {
-  background-color: var(--WHITE);
+  flex-basis: calc((100% - 48px) / 3);
+}
+.portfolio-captions {
+  border: 1px solid var(--cornflower);
+  border-top: none;
+  padding: 32px 16px;
 }
 
 .smaller-captions {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   color: var(--SLATE);
+  text-align: center;
+}
+.second-section .company-features,
+.second-section .list-paragraph {
+  text-align: lefr;
 }
 .logo_element-footer {
   color: var(--CLOUD);
@@ -279,10 +305,14 @@ body {
 }
 .list {
   display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
-.list-portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio-container {
+  row-gap: 48px;
+  text-align: left;
 }
 .list-studio {
   color: var(--navy-blue);
@@ -302,7 +332,9 @@ body {
   display: flex;
   align-items: center;
 }
-.team-list {
+.portfolio-captions > .smaller-captions {
+  margin-bottom: 8px;
+  text-align: left;
 }
 .banner {
   color: var(--WHITE);
