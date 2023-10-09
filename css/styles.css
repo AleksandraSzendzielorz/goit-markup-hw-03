@@ -219,6 +219,7 @@ body {
 }
 .buttons {
   margin-bottom: 72px;
+  justify-content: center;
 }
 .button {
   border: none;
@@ -234,6 +235,7 @@ body {
   color: var(--IRIS);
   background-color: var(--CLOUD);
   padding: 12px 24px;
+  margin-bottom: 72px;
 }
 .filter-button:hover {
   color: var(--WHITE);
