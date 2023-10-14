@@ -70,7 +70,8 @@ body {
 }
 
 .first-section {
-  background-color: var(--NAVY-BLUE);
+  background-color: var(--oun-BLUE);
+  background-image: ("../images/people-office.jpg");
   padding: 188px 0 188px;
 }
 
